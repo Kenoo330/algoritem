@@ -20,6 +20,14 @@ bool Branje_Stevil(vector<unsigned char> &vec, const char s[]) {
     return true;
 }
 
+void Izpis_Stevil(vector<unsigned char> &polje) {
+    ofstream output("out.txt");
+
+    for (unsigned char i : polje) {
+        output << static_cast<int>(i) << ' ';
+    }
+}
+
 void countingSort(vector<unsigned char> &A, int n, int k) {
     vector<int> count(2, 0);
     vector<unsigned char> output(n);
@@ -66,6 +74,10 @@ int main(int argc, const char *argv[]) {
     }
 
     radixSort(A);
+
+    Izpis_Stevil(A);
+
+    cout << "Sorting completed. Sorted numbers written to out.txt\n";
 
     return 0;
 }
