@@ -20,6 +20,12 @@ bool Branje_Stevil(vector<unsigned char> &vec, const char s[]) {
     return true;
 }
 
+void radixSort(vector<unsigned char> &A) {
+    for (int k = 0; k < 8; ++k) {
+        countingSort(A, A.size(), k);
+    }
+}
+
 int main(int argc, const char *argv[]) {
     vector<unsigned char> A;
 
@@ -32,6 +38,8 @@ int main(int argc, const char *argv[]) {
         cout << "Error: Unable to read input file.\n";
         return 1;
     }
+
+    radixSort(A);
 
     return 0;
 }
