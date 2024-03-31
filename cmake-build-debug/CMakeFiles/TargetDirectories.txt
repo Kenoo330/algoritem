@@ -1,0 +1,3 @@
+C:/Users/kenan/OneDrive/namizje/naloga2/cmake-build-debug/CMakeFiles/naloga2.dir
+C:/Users/kenan/OneDrive/namizje/naloga2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kenan/OneDrive/namizje/naloga2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
